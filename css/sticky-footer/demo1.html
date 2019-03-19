@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sticky-footer-demo1</title>
+  <style>
+    body {
+      display: flex;
+      flex-flow: column;
+      min-height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+    .wrapper {
+      flex: 1
+    }
+    .footer {
+      /* flex为0可写可不写，因为.wrapper会占减去footer剩下位置 */
+      /* flex: 0; */
+      height: 80px;
+      background: pink;
+      color: #000;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">我是wrapper</div>
+  <div class="footer">我是底部</div>
+</body>
+</html>
