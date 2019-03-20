@@ -1,5 +1,5 @@
-**1)module.noParse**
-比如说我们要在入口文件中引入jquery，webpack默认会解析jquery中的其他依赖项，从而降低打包性能，因此可以设置noParse：/jquery/,告诉webpack不去解析jqeury中的依赖关系  
+**1)module.noParse**  
+比如说我们要在入口文件中引入jquery，webpack默认会解析jquery中的其他依赖项，从而降低打包性能，因此可以设置noParse：/jquery/,告诉webpack不去解析jqeury中的依赖关系    
 参考文章 ：[https://webpack.js.org/configuration/module/#modulenoparse](https://webpack.js.org/configuration/module/#modulenoparse)
 
 ```javascript
@@ -15,8 +15,8 @@ module.exports = {
 }
 ```
 
-**2)rule.exclude和rule.include**
-参考文章：[https://webpack.js.org/configuration/module#ruleexclude](https://webpack.js.org/configuration/module#ruleexclude)
+**2)rule.exclude和rule.include**  
+参考文章：[https://webpack.js.org/configuration/module#ruleexclude](https://webpack.js.org/configuration/module#ruleexclude)  
 ***webpack.config.js***
 ```javascript
 module.exports = {
@@ -39,8 +39,8 @@ module.exports = {
 }
 ```  
 
-**3)IgnorePlugin**
-参考文章：[https://webpack.js.org/plugins/ignore-plugin/](https://webpack.js.org/plugins/ignore-plugin/)  
+**3)IgnorePlugin**  
+参考文章：[https://webpack.js.org/plugins/ignore-plugin/](https://webpack.js.org/plugins/ignore-plugin/)    
 在moment插件中所有locales文件夹都会被引用，我们可以通过只引入我们需要的locale来优化打包性能。如下图所示
 <img src="./images/20-1.jpg"/>  
 <img src="./images/20-2.jpg"/>   
