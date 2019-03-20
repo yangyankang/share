@@ -3,7 +3,8 @@ webpack 内部自带了express 所以直接使用
 
 ### 1.通过devServer中的proxy到express服务器上
 
-**文件夹图**
+**文件夹图**   
+
 <img  src ="./images/16-1.jpg"/>
 
 
@@ -75,7 +76,8 @@ module.exports = {
 
 ### 2.后端没有接口，前端单纯想mock数据
 
-可以利用devServer的钩子before，参考网址：[https://webpack.js.org/configuration/dev-server/#devserverbefore](https://webpack.js.org/configuration/dev-server/#devserverbefore)
+可以利用devServer的钩子before，参考网址：[https://webpack.js.org/configuration/dev-server/#devserverbefore](https://webpack.js.org/configuration/dev-server/#devserverbefore)   
+通过before钩子我们在devServer提供的8080端口启动服务，我们可以发送请求得到接口
 
 
 **webpack.config.js**
@@ -90,6 +92,9 @@ module.exports = {
     }
   }
 };
+```
+
+```javascript
 ```
 
 
