@@ -1,6 +1,6 @@
+**首先把webpack.config.js中mode改为production模式**
 ### 1)import 会在生产环境下自动去除没有用的代码,其实是一种tree-shaking，就是把没有用到的代码自动删除掉  
-首先把webpack.config.js中mode改为production模式  
-我们新建一个other.js  
+ 我们新建一个other.js
 **src/other.js**
 ```javascript
 let sum = (a,b) => {
