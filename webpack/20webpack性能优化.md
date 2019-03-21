@@ -39,7 +39,7 @@ module.exports = {
 }
 ```  
 
-**3)IgnorePlugin**  
+### **3)IgnorePlugin**  
 参考文章：[https://webpack.js.org/plugins/ignore-plugin/](https://webpack.js.org/plugins/ignore-plugin/)    
 在moment插件中所有locales文件夹都会被引用，我们可以通过只引入我们需要的locale来优化打包性能。如下图所示
 <img src="./images/20-1.jpg"/>  
