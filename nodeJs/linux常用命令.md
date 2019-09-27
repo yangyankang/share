@@ -1,3 +1,0 @@
-- mkdir 创建目录
-- touch 创建文件
-- systemctl stop firewalld 关闭防火墙
