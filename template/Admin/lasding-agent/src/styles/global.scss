@@ -1,0 +1,173 @@
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+  &.is-show-idraewr{
+    overflow: hidden;
+  }
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.el-submenu{
+  .el-menu{
+    background-color: #000c17;
+  }
+}
+
+.el-header.fixed-header{
+  position: fixed;
+  width: calc(100% - 200px);
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.pages-wrapper{
+  text-align: right;
+  padding: 15px 0;
+}
+
+.el-table{
+  .table-header-style{
+  }
+  .table-header-cell-style{
+    background-color: #F7F7F7;
+  }
+}
+
+.header-btns-wrapper{
+  margin-bottom: 15px;
+  overflow: hidden;
+  .fr{
+    float: right;
+  }
+}
+
+.table-handle-btns{
+  .handle-btn{
+    position: relative;
+    line-height: 18px;
+    margin-right: 5px;
+    padding-right: 3px;
+    word-spacing: 0;
+    letter-spacing: 0;
+    cursor: pointer;
+    &:not(:last-child)::after{
+      content: "";
+      width: 1px;
+      height: 80%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #ccc;
+    }
+    &.primary{
+      color: #409eff;
+    }
+    &.success{
+      color: #67c23a;
+    }
+    &.warn{
+      color: #e6a23c;
+    }
+    &.danger{
+      color: #f56c6c;
+    }
+  }
+}
+
+.search-form{
+  .el-form-item{
+    margin-bottom: 2px;
+    .el-form-item{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.add-cascader-height{
+  .el-cascader-menu__wrap{
+    height: 360px;
+  }
+}
+
+.el-submenu{
+  .el-menu-item{
+    text-indent: 18px;
+  }
+}
+
+.set-popper{
+  padding: 2px 5px;
+  background-color: #F5F5F5;
+}
+
+.area-tree{
+  >.el-tree-node{
+      display: flex;
+      >.el-tree-node__children{
+          flex: 1;
+          >.el-tree-node{
+              display: inline-block;
+              vertical-align: top;
+              width: 25%;
+              white-space: nowrap;
+              overflow: hidden;
+          }
+      }
+  }
+  .el-tree-node{
+      white-space: normal;
+  }
+  .el-tree-node__label{
+    white-space: nowrap;
+  }
+}
+
+.el-table{
+  font-size: 12px !important;
+  th{
+    padding: 3px 0 !important;
+  }
+  td{
+    padding: 8px 0 !important;
+  }
+}
+
+.amap-icon img,
+.amap-marker-content img{
+    width: 25px;
+    height: 34px;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 4px;
+  background-color: #CCC;
+}
+
+// #app{
+//   .global-header,
+//   .page-header,
+//   .el-card,
+//   .el-table{
+//     background-color: rgba(255, 255, 255, 0.3)
+//   }
+//   .el-table tr,
+//   .el-input__inner{
+//     background-color: rgba(255, 255, 255, 0.1)
+//   }
+// }
