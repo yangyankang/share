@@ -19,7 +19,7 @@
     "nprogress": "^0.2.0",
     "qiniu-js": "^2.5.4",
     "qrcode.vue": "^1.6.2",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "v-viewer": "^1.4.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
